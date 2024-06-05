@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The GenAI Pipeline is a pipeline that is designed to be a more efficient and effective pipeline for the Agentic-RAG model. The pipeline is designed to be more efficient by reducing the amount of noise in the response, increasing the relevancy of the response, and increasing the faithfulness of the response. The pipeline is designed to be more effective by increasing the speed of the response, increasing the accuracy of the response, and increasing the diversity of the response.
+The GenAI Pipeline is a pipeline that is designed to be more efficient and effective for the Agentic-RAG model. The pipeline is designed to be more efficient by reducing the amount of noise in the response, increasing the relevancy of the response, and increasing the faithfulness of the response. The pipeline is designed to be more effective by increasing the speed of the response, increasing the accuracy of the response, and increasing the diversity of the response.
 
 At a high-level the GenAI Pipeline is a `Decision Engine` that is designed to take in a query and return a response.
 
