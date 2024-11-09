@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="wVct_VNZxDn5CFzn47dh" name="VerdantArch">
-        <mxGraphModel dx="222" dy="2916" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="490" dy="3095" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -179,10 +179,8 @@
                 <mxCell id="JdLTlZyW0Yv0Q7jSRMBB-105" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Cross Encoder&lt;/font&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontStyle=1;startSize=20;rounded=1;" parent="1" vertex="1">
                     <mxGeometry x="3040" y="299.35999999999996" width="170" height="37.43" as="geometry"/>
                 </mxCell>
-                <mxCell id="202" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="101" target="177" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="2280" y="307.42999999999984" as="targetPoint"/>
-                    </mxGeometry>
+                <mxCell id="YpvME2RFcAk7FuTdXYUe-281" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="101" target="YpvME2RFcAk7FuTdXYUe-280">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="101" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="1820" y="232.43" width="399.41" height="150" as="geometry"/>
@@ -686,6 +684,24 @@
                 </mxCell>
                 <mxCell id="ZS5h_QZ1MWFwK11WsJUL-253" value="" style="edgeStyle=none;html=1;fontSize=12;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" parent="YpvME2RFcAk7FuTdXYUe-279" source="89" target="ZS5h_QZ1MWFwK11WsJUL-243" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="YpvME2RFcAk7FuTdXYUe-282" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YpvME2RFcAk7FuTdXYUe-280" target="177">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="YpvME2RFcAk7FuTdXYUe-280" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;Lazy Cache&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2290" y="277.42999999999995" width="108.75" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="YpvME2RFcAk7FuTdXYUe-283" value="KV Store" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="2288.75" y="226.79" width="110" height="40.77" as="geometry"/>
+                </mxCell>
+                <mxCell id="YpvME2RFcAk7FuTdXYUe-284" value="- cache frequently asked or similar queries&lt;br&gt;- Hierarchical Query Expansion: Simpler Queries bypass expansion to speed up processing" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fontSize=16;align=left;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="1830" y="400" width="294" height="120.77" as="geometry"/>
+                </mxCell>
+                <mxCell id="YpvME2RFcAk7FuTdXYUe-285" value="- Uses a light-weight LLM call, locally, to tag the incoming query, and represent it with a complexity score." style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fontSize=16;align=left;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="1867.37" y="87.30000000000001" width="294" height="120.77" as="geometry"/>
+                </mxCell>
+                <mxCell id="YpvME2RFcAk7FuTdXYUe-286" value="&lt;i&gt;&lt;b&gt;Semantic Analysis&lt;/b&gt;&lt;br&gt;&lt;/i&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Intent Classification and Named Entity Recognition (NER)&lt;/strong&gt;: Advanced NLP techniques like intent classification and NER can help in accurately determining query type and expected answer format. Integrating these with the Query Analysis module can enhance the accuracy of database selection.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Contextual Query Interpretation&lt;/strong&gt;: For queries in a conversational setting, incorporate a context layer that retains prior interactions. This could improve multi-turn interactions by allowing questions to reference previous queries without re-specifying context.&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=12 12;fontSize=12;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="3010" y="450" width="785" height="140" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
