@@ -1,11 +1,20 @@
 {
   "cSpell.words": [
     "Agentic",
+    "Apriori",
+    "ARIMA",
+    "DBSCAN",
+    "fastdtw",
     "groq",
     "Helicone",
+    "infty",
+    "LSTM",
+    "mathbf",
     "Matryoshka",
     "Mixtral",
+    "numpy",
     "Parea",
+    "scipy",
     "Sili",
     "Traceloop"
   ]
